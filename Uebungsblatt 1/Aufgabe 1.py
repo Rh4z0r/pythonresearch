@@ -13,10 +13,10 @@ price = 50                                                             # 50 Euro
 tax = 0.035                                                            # Steuersatz
 
 
-flaeche = length * width                                               #Flächenberechnung durchführen
+flaeche = length * width                                               # Flächenberechnung durchführen
 netto = flaeche * price                                                # Preisberechnung durchführen
 brutto = netto * (1+tax)                                               # Brutto berechnen
 
-print(f"Die Fläche beträgt {flaeche} cm²")                              # Ausgabe des Ergebnisses der Flächenberechnung
+print(f"Die Fläche beträgt {flaeche} cm²")                             # Ausgabe des Ergebnisses der Flächenberechnung
 print(f"Der Nettopreis beträgt {netto:,.2f} EUR".replace(".", ","))    # Ausgabe des Nettopreises (erzwingen von 2 Nachkomma-Stellen und ersetzen des Punktes durch ,)
-print(f"Der bruttopreis beträgt {brutto:,.2f} EUR".replace(".", ","))  # AUsgabe des Bruttopreises (erzwingen von 2 Nachkomma-Stellen und ersetzen des Punktes durch ,)
+print(f"Der bruttopreis beträgt {brutto:,.2f} EUR".replace(".", ","))  # Ausgabe des Bruttopreises (erzwingen von 2 Nachkomma-Stellen und ersetzen des Punktes durch ,)
