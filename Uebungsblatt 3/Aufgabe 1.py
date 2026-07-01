@@ -22,3 +22,8 @@ for i, char in enumerate(list):                                                 
 
 print(f"Hello: {hello}")                                                                            # Ausgabe des Wortes Hello  
 print(f"Peter: {peter}")                                                                            # Ausgabe des Wortes Peter
+
+parts = [(1, '500-1', 'Hammer', 2, 'Pieces'), (2, '503', 'Screwdriver', 3, 'Pieces')]               # Liste Parts definieren
+bezeichnungen = [bezeichnung for _, _, bezeichnung, _, _ in parts]                                  # Namen extrahieren   _, _, bezeichnung, _, _    
+
+print(f"Bezeichnungen: {bezeichnungen}")                                                            # Ausgabe der Bezeichnung
